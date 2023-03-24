@@ -1,0 +1,38 @@
+.app-page {
+    display: flex;
+    height: 100vh;
+
+    .panel {
+        flex: 1;
+    }
+
+    .left-panel {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #263238;
+    }
+
+    .right-panel {
+        overflow: scroll;
+        overflow-x: hidden; // change this with a hidden scrollbar
+        padding: 1.5rem;
+        background-color: #92A0B5;
+
+        .resume-content {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            iframe {
+                border-radius: 2px;
+                aspect-ratio: 1/1.41;
+                background-color: #fff;
+                -webkit-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.75);
+                box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.75);
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.editor-container {
+    border-bottom: 5px solid #fff;
+
+    .editor-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #fff;
+        padding: .75rem;
+        color: #fffbf7;
+        font-size: 1.1rem;
+    }
+
+    .editor-code {
+        padding: 1rem 0 1rem 0;
+    }
+
+    &:last-child {
+        border: none;
+    }
+}
