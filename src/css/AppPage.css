@@ -1,0 +1,37 @@
+.app-page {
+  display: flex;
+  height: 100vh;
+}
+.app-page .panel {
+  flex: 1;
+}
+.app-page .left-panel {
+  display: flex;
+  justify-content: space-between;
+  background-color: #263238;
+  flex: 1;
+}
+.app-page .right-panel {
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 1.5rem;
+  background-color: #92A0B5;
+}
+.app-page .right-panel .resume-buttons {
+  display: flex;
+  justify-content: end;
+}
+.app-page .right-panel .resume-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app-page .right-panel .resume-content iframe {
+  border-radius: 2px;
+  aspect-ratio: 1/1.41;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.75);
+}/*# sourceMappingURL=AppPage.css.map */

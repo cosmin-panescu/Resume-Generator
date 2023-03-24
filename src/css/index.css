@@ -4,7 +4,6 @@ body {
   box-sizing: border-box;
 }
 
-// Custom button (inspiration from uiverse.io)
 .custom-btn {
   display: flex;
   justify-content: space-around;
@@ -21,7 +20,7 @@ body {
   position: relative;
   overflow: hidden;
   font-size: 15px;
-  letter-spacing: .75px;
+  letter-spacing: 0.75px;
   font-weight: 500;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -166,7 +165,6 @@ body {
     top: -50%;
   }
 }
-
 .custom-btn button.start:hover:before,
 .custom-btn button.start:hover:after {
   display: none;
@@ -183,4 +181,4 @@ body {
 
 .custom-btn button:focus {
   outline: 0;
-}
+}/*# sourceMappingURL=index.css.map */

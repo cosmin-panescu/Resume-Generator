@@ -8,44 +8,42 @@ import useLocalStorage from '../../hooks/useLocalStorage'
 import './AppPage.scss'
 // Print PDF
 import { useReactToPrint } from 'react-to-print'
+// html & css data
+import { cssData, htmlData } from '../../utils/contentData';
+
 
 const AppPage = () => {
-  const [html, setHtml] = useLocalStorage('html', '')
-  const [css, setCss] = useLocalStorage('css', '')
-  const [srcDoc, setSrcDoc] = useState('')
+  // const [html, setHtml] = useLocalStorage('html', '');
+  // const [css, setCss] = useLocalStorage('css', '');
+  const [html, setHtml] = useState(htmlData);
+  const [css, setCss] = useState(cssData);
 
   const resumeRef = useRef();
   const handlePrint = useReactToPrint({
     content: () => resumeRef.current,
-    documentTitle: 'emp-data',
-    onAfterPrint: () => alert("merge boss"),
+    documentTitle: 'Resume',
+    // onAfterPrint: () => alert("merge boss"),
   });
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setSrcDoc(`
+  const srcDoc = `
         <html>
           <body>${html}</body>
           <style>${css}</style>
         </html>
-      `)
-    }, 250)
-
-    return () => clearTimeout(timeout)
-  }, [html, css])
+      `;
 
   return (
     <div className='app-page'>
       <div className="panel left-panel">
         <Editor
           language="xml"
-          displayName="resume.md"
+          displayName="HTML"
           value={html}
           onChange={setHtml}
         />
         <Editor
           language="css"
-          displayName="resume.css"
+          displayName="CSS"
           value={css}
           onChange={setCss}
         />
@@ -53,11 +51,15 @@ const AppPage = () => {
 
       <div className="panel right-panel">
         <div className="resume-buttons">
-          <button
-            type='button'
+          <div
             onClick={handlePrint}
+            class="resume-download custom-btn"
           >
-            Download Resume</button>
+            <button class="btn">
+              <span></span>
+              <p data-start="good luck!" data-text="Resume" data-title="Download"></p>
+            </button>
+          </div>
         </div>
         <div className="resume-content" ref={resumeRef}>
           <iframe
