@@ -53,9 +53,9 @@ const AppPage = () => {
         <div className="resume-buttons">
           <div
             onClick={handlePrint}
-            class="resume-download custom-btn"
+            className="resume-download custom-btn"
           >
-            <button class="btn">
+            <button className="btn">
               <span></span>
               <p data-start="good luck!" data-text="Resume" data-title="Download"></p>
             </button>
