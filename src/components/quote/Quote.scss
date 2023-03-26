@@ -1,0 +1,24 @@
+.quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+
+    .quote-container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            word-wrap: break-word;
+            color: #fffdef;
+            font-weight: 200;
+            font-family: 'Parisienne', cursive;
+        }
+    }
+}
