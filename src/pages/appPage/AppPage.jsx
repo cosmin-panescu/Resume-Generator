@@ -51,15 +51,15 @@ const AppPage = () => {
 
       <div className="panel right-panel">
         <div className="resume-buttons">
-          <div
+          <button
+            className="resume-download custom-btn1"
             onClick={handlePrint}
-            className="resume-download custom-btn"
           >
-            <button className="btn">
-              <span></span>
-              <p data-start="good luck!" data-text="Resume" data-title="Download"></p>
-            </button>
-          </div>
+            Download
+            <div className="arrow-wrapper">
+              <div className="arrow"></div>
+            </div>
+          </button>
         </div>
         <div className="resume-content" ref={resumeRef}>
           <iframe

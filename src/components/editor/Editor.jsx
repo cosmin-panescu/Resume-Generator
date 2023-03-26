@@ -10,9 +10,12 @@ import 'codemirror/addon/edit/closetag';
 import { Controlled as ControlledEditor } from 'react-codemirror2'
 // CSS
 import './Editor.scss';
+// React Icons
+import { CgArrowsExpandRight } from 'react-icons/cg';
 
 export default function Editor(props) {
   const { language, displayName, value, onChange } = props;
+
   // state for each code editor window
   const [open, setOpen] = useState(true);
 
@@ -23,11 +26,12 @@ export default function Editor(props) {
   return (
     <div className={`editor-container ${open ? '' : 'collapsed'}`}>
       <div className="editor-title">
-        <span>{displayName}</span>
+        <span className='editor-title-name'>{displayName}</span>
         <button
+          className='editor-title-btn'
           onClick={() => setOpen(!open)}
         >
-          O/C
+          <CgArrowsExpandRight className='editor-title-btn-icon'/>
         </button>
       </div>
       <ControlledEditor
