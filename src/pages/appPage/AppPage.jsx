@@ -9,7 +9,8 @@ import './AppPage.scss'
 // Print PDF
 import { useReactToPrint } from 'react-to-print'
 // html & css data
-import { cssData, htmlData } from '../../utils/contentData';
+import { cssData, htmlData } from '../../utils/codeContent';
+import { Link } from 'react-router-dom'
 
 
 const AppPage = () => {
@@ -51,6 +52,15 @@ const AppPage = () => {
 
       <div className="panel right-panel">
         <div className="resume-buttons">
+          <Link
+            className='custom-btn1 link link-reverse'
+            to='/'
+          >
+            <div className="arrow-wrapper">
+              <div className="arrow"></div>
+            </div>
+            Homepage
+          </Link>
           <button
             className="resume-download custom-btn1"
             onClick={handlePrint}

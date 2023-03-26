@@ -19,7 +19,7 @@
 }
 .app-page .right-panel .resume-buttons {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   margin-bottom: 1rem;
 }
 .app-page .right-panel .resume-content {
