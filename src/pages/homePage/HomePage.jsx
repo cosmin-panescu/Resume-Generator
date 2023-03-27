@@ -1,6 +1,7 @@
 // React
 import React from 'react'
 import About from '../../components/about/About'
+import Footer from '../../components/footer/Footer'
 import Header from '../../components/header/Header'
 import Quote from '../../components/quote/Quote'
 // CSS
@@ -12,6 +13,7 @@ const HomePage = () => {
       <Header />
       <Quote quote={"Your resume is a key to unlock doors to opportunities."} />
       <About />
+      <Footer />
     </div>
   )
 }

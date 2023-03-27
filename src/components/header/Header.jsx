@@ -9,6 +9,12 @@ import StarsButton from '../startsButton/StartsButton'
 const Header = () => {
     return (
         <div className="header">
+            {/* floating squares */}
+            <div className="square s1"></div>
+            <div className="square s2"></div>
+            <div className="square s3"></div>
+            <div className="square s4"></div>
+            <div className="square s5"></div>
             <div className="title-container">
                 <h1 className='title'>betteresume.</h1>
             </div>

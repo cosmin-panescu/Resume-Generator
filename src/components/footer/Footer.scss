@@ -1,0 +1,17 @@
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    border-top: 3px solid #fff;
+    word-wrap: break-word;
+    text-align: center;
+
+    p {
+        color: #fffdef;
+        font-size: .85rem;
+    }
+}
+
+@media screen and (max-width: 700px) {}

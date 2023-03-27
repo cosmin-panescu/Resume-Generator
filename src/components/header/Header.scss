@@ -4,6 +4,7 @@
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+    padding: 0 2rem;
 
     .title-container {
         color: #92A0B5;
@@ -13,11 +14,13 @@
             width: 100%;
             white-space: nowrap;
             overflow: hidden;
-            animation: typing 2s,
+            animation: typing 2s;
         }
     }
 
     .description {
+        z-index: 10;
+        word-wrap: break-word;
         padding-top: 2rem;
         font-size: 1.1rem;
         text-align: center;
@@ -26,6 +29,88 @@
 
     .link {
         margin-top: 2rem;
+    }
+
+    // floating squares
+    .square {
+        background: rgba(#fff, .05);
+        border-radius: 20px;
+        position: absolute;
+        animation: float 5s linear infinite;
+        backdrop-filter: blur(5px);
+        z-index: 0;
+
+        &.s1 {
+            left: 20vw;
+            top: 100px;
+            width: 60px;
+            height: 60px;
+        }
+
+        &.s2 {
+            right: 12.5vw;
+            top: 450px;
+            width: 140px;
+            height: 140px;
+            animation-delay: 1s;
+            border-radius: 15px;
+        }
+
+        &.s3 {
+            right: 25vw;
+            top: 120px;
+            width: 50px;
+            height: 50px;
+            animation-delay: 2s;
+            border-radius: 10px;
+        }
+
+        &.s4 {
+            left: 5vw;
+            top: 320px;
+            width: 100px;
+            height: 100px;
+            animation-delay: 1.5s;
+        }
+
+        &.s5 {
+            border-radius: 10px;
+            left: 14vw;
+            top: 70vh;
+            width: 80px;
+            height: 80px;
+            animation-delay: 2.5s;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .header {
+        .title-container {
+            .title {
+                font-size: 3.25rem;
+            }
+        }
+
+        .description {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header {
+        padding: 0;
+
+        .title-container {
+            .title {
+                font-size: 2.35rem;
+            }
+        }
+
+        .description {
+            font-size: .9rem;
+        }
     }
 }
 
