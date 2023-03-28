@@ -72,14 +72,9 @@ const AppPage = () => {
           </button>
         </div>
         <div className="resume-content" ref={resumeRef}>
-          <iframe
+          <div
             className="resume"
-            srcDoc={srcDoc}
-            title="output"
-            sandbox="allow-scripts"
-            frameBorder="0"
-            width="100%"
-            height="100%"
+            dangerouslySetInnerHTML={{ __html: srcDoc }}
           />
         </div>
       </div>

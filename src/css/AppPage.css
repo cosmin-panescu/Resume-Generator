@@ -23,12 +23,12 @@
   margin-bottom: 1rem;
 }
 .app-page .right-panel .resume-content {
-  width: 100%;
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
 }
-.app-page .right-panel .resume-content iframe {
+.app-page .right-panel .resume-content .resume {
   border-radius: 2px;
   aspect-ratio: 1/1.41;
   background-color: #fff;

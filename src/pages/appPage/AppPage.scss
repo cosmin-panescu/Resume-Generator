@@ -26,12 +26,12 @@
         }
 
         .resume-content {
-            width: 100%;
             display: flex;
+            width: 100%;
             align-items: center;
             justify-content: center;
 
-            iframe {
+            .resume {
                 border-radius: 2px;
                 aspect-ratio: 1/1.41;
                 background-color: #fff;
