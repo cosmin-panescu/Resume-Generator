@@ -1,4 +1,39 @@
-# Getting Started with Create React App
+# Resume Generator - betteresume.
+
+Betteresume is a web application that allows you to quickly and easily create custimized resumes using an HTML and CSS template. This is an ideal tool for programmers and other individuals who are comfortable manipulating HTML and CSS code. Don't worry, it is very simple to edit the HTML code for you content.
+
+Features:
+- quick and easy generation of customized resume using HTML and CSS template
+- real-time presentation of changes made in the HTML and CSS code
+- intuitive and easy-to-use use interface
+- HTML and CSS code is easily customizable and adaptable to meet your specific needs
+
+How to use:
+- open the application in a broser, preferably on a desktop device
+- modify the HTML and CSS code on the left side of the interface to personalize your CV
+- view the changes in real-time on the right side of the interface
+- download as PDF the final resume, using the download option available in the user interface
+
+Features that will be added:
+- choice of multiple templates
+- automativ saving of each modified version of the template
+- section with answers to the most asked questions about resumes
+- section with tips for resume
+
+Languages and Frameworks used:
+- HTML
+- SCSS
+- JavaScript
+- ReactJS
+
+Technologies and Tools used:
+- Server-side Rendering
+- React Router DOM
+- GIT
+
+--------------------------------------------------
+
+#@ Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -29,42 +64,3 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
