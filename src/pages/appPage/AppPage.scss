@@ -23,6 +23,10 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 1rem;
+
+            button {
+                font-size: .99rem;
+            }
         }
 
         .resume-content {

@@ -28,7 +28,7 @@ body {
   padding: 1em 1.8em;
   background: #2d3b42;
   display: flex;
-  transition: 0.2s background;
+  transition: all 0.2s;
   align-items: center;
   gap: 0.6em;
   cursor: pointer;

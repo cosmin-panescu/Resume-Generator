@@ -22,6 +22,9 @@
   justify-content: space-between;
   margin-bottom: 1rem;
 }
+.app-page .right-panel .resume-buttons button {
+  font-size: 0.99rem;
+}
 .app-page .right-panel .resume-content {
   display: flex;
   width: 100%;
