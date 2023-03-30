@@ -19,6 +19,14 @@
     // collapse button
     &.collapsed {
         flex-grow: 0;
+
+        .editor-code {
+            display: none;
+        }
+
+        .editor-title-name {
+            display: none;
+        }
     }
 
     .editor-title {
@@ -55,6 +63,7 @@
         padding: 1rem 0 1rem 0;
         overflow: hidden;
         height: 100%;
+        transition: all 1s ease-in-out;
 
         // codemirror classes (taken from the console)
         .CodeMirror-wrap {
@@ -68,7 +77,7 @@
 
                     &-thumb {
                         background-color: #3d494f;
-                        border-radius: 2px;
+                        border-radius: 10px;
                     }
                 }
             }
