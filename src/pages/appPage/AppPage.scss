@@ -1,9 +1,47 @@
 .app-page {
     display: flex;
     height: 100vh;
+    position: relative;
+
+    .modal {
+        position: absolute;
+        height: 300px;
+        width: 475px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        background-color: #fffdef;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem;
+        border-radius: 10px;
+
+        &.close {
+            display: none;
+        }
+
+        p {
+            font-size: 1.05rem;
+            text-align: center;
+        }
+
+        .modal-icon {
+            font-size: 3rem;
+            color: #fe5451;
+        }
+    }
 
     .panel {
         flex: 1;
+        flex-grow: 1;
+        transition: all .5s ease-in-out;
+
+        &.overlay {
+            filter: brightness(0.15);
+        }
     }
 
     .left-panel {
@@ -11,22 +49,20 @@
         justify-content: space-between;
         background-color: #263238;
         flex: 1;
+        width: 50%;
     }
 
     .right-panel {
         overflow: scroll;
-        overflow-x: hidden; // change this with a hidden scrollbar
+        overflow-x: hidden;
         padding: 1rem 1.5rem 1.5rem 1.5rem;
         background-color: #92A0B5;
+        width: 50%;
 
         .resume-buttons {
             display: flex;
             justify-content: space-between;
             margin-bottom: 1rem;
-
-            button {
-                font-size: .99rem;
-            }
         }
 
         .resume-content {
