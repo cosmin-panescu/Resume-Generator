@@ -14,18 +14,21 @@ import { Link } from 'react-router-dom'
 
 
 const AppPage = () => {
-  // const [html, setHtml] = useLocalStorage('html', '');
-  // const [css, setCss] = useLocalStorage('css', '');
-  const [html, setHtml] = useState(htmlData);
-  const [css, setCss] = useState(cssData);
+  // with localStorage
+  const [html, setHtml] = useLocalStorage('html', htmlData);
+  const [css, setCss] = useLocalStorage('css', cssData);
+  // without localStorage
+  // const [html, setHtml] = useState(htmlData);
+  // const [css, setCss] = useState(cssData);
 
+  // print as PDF
   const resumeRef = useRef();
   const handlePrint = useReactToPrint({
     content: () => resumeRef.current,
     documentTitle: 'Resume',
-    // onAfterPrint: () => alert("merge boss"),
   });
 
+  // all code-source document (HTML + CSS) 
   const srcDoc = `
         <html>
           <body>${html}</body>
