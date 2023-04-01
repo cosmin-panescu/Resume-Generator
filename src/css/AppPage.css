@@ -48,7 +48,6 @@
   overflow: scroll;
   overflow-x: hidden;
   background-color: #92A0B5;
-  width: 50%;
 }
 .app-page .right-panel-container {
   padding: 1rem 1.5rem 1.5rem 1.5rem;
@@ -74,4 +73,39 @@
 .CodeMirror-wrap pre.CodeMirror-line,
 .CodeMirror-wrap pre.CodeMirror-line-like {
   word-break: break-all;
+}
+
+@media screen and (max-width: 850px) {
+  .app-page {
+    flex-direction: column;
+    height: max-content;
+  }
+  .app-page .right-panel {
+    overflow: hidden;
+  }
+  .app-page .modal {
+    height: 250px;
+    width: 375px;
+    padding: 1.2rem;
+    top: 15%;
+  }
+  .app-page .modal p {
+    font-size: 1rem;
+  }
+  .app-page .modal .modal-icon {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 580px) {
+  .app-page .modal {
+    width: 80%;
+  }
+  .app-page .modal p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .app-page .modal {
+    top: 10%;
+  }
 }/*# sourceMappingURL=AppPage.css.map */

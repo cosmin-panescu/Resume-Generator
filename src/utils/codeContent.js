@@ -1,15 +1,16 @@
 
-export const cssData = `/* You can edit this CSS code if you want to customize your formatting / styling further */
-/* You can even import custom fonts! ^^*/
+export const cssData = `
+/* You can poke around this CSS if you want to customize your formatting / styling further */
+/* You can even import custom fonts! */
 
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap');
 
-.body {
+/* meta */
+body {
     font-family: Tinos, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-    font-size:  12.5px;
+    font-size:  14px;
     font-weight: 400;
-    margin: 2.25rem;
 }
 
 .spacer {
@@ -20,6 +21,7 @@ export const cssData = `/* You can edit this CSS code if you want to customize y
     height: 8px;
 }
 
+/* ordering of content */
 h1 {
     order: 0;
 }
@@ -28,6 +30,7 @@ h1 {
     order: 1;
 }
 
+/* styling content */
 h1, h2, h3, p, a, li {
     color: black;
 }
@@ -90,6 +93,7 @@ strong, em, a {
     padding-right: 2px;
 }
 
+/* header info content */
 .headerInfo > ul {
     display: flex;
     text-align: center;
@@ -112,13 +116,33 @@ strong, em, a {
     content: "•";
     margin-left: 8px;
 }
+
 `
 
 export const htmlData = `
-<section class="body">
-<h1 id="-name-">NAME</h1>
-<p>LOCATION | PHONE | EMAIL </p>
-<p><a href="https://LINKEDIN">https://LINKEDIN</a> | <a href="https://GITHUB">https://GITHUB</a></p>
+<!--
+Welcome to resume.lol !
+
+This is the template you can use to get started.
+
+Easily remove personal info by using a variable follow with a second value and "||":
+
+@NAME=Real Name||Hidden Name
+
+and change @REDACTED to be true
+
+@REDACTED=true
+-->
+<p>@REDACTED=false
+@NAME=Name||Hidden
+@EMAIL=realemail@gmail.com||fake@email.com
+@PHONE=(123) 123-REAL||(555) 123-5555
+@LOCATION=Los Angeles, CA ZIP||City, State ZIP
+@LINKEDIN=linkedin.com/in/your-url||linkedin.com
+@GITHUB=github.com/username||github.com</p>
+<h1 id="-name-">{NAME}</h1>
+<p>{LOCATION} (Open to Remote) | {PHONE} | {EMAIL} </p>
+<p><a href="https://{LINKEDIN}">{LINKEDIN}</a> | <a href="https://{GITHUB}">{GITHUB}</a></p>
 <div className="vertical-spacer"></div>
 
 <h2 id="technical-skills">Technical Skills</h2>
@@ -170,5 +194,5 @@ export const htmlData = `
 <h2 id="education">Education</h2>
 <p><strong>University of XXX</strong> - Master of Science, Computer Science, GPA (only &gt;= 3.7)<span class="spacer"></span>2023</p>
 <p><strong>University of XXX</strong> - Bachelors of Science, Computer Science, GPA (only &gt;= 3.7)<span class="spacer"></span>2022</p>
-</section>
+
 `

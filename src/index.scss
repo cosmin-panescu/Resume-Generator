@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 
+// reset
 body {
   margin: 0;
   padding: 0;
@@ -13,7 +14,6 @@ button {
   font-family: 'Poppins', sans-serif;
 }
 
-// formating styles
 .link {
   text-decoration: none;
 }
@@ -31,7 +31,7 @@ button {
   }
 }
 
-// Custom button (inspiration from uiverse.io)
+// custom button (inspired by uiverse.io)
 .custom-btn1 {
   font-size: .9rem;
   box-sizing: border-box;
@@ -90,5 +90,20 @@ button {
         right: 0;
       }
     }
+  }
+}
+
+// responsive
+@media screen and (max-width: 768px) {
+  .custom-btn1 {
+    font-size: .75rem;
+    padding: 1em 1.5em;
+    gap: .5em;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .custom-btn1 {
+    font-size: .65rem;
   }
 }

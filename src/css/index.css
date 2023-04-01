@@ -75,4 +75,17 @@ button {
 }
 .custom-btn1:hover .arrow:before {
   right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-btn1 {
+    font-size: 0.75rem;
+    padding: 1em 1.5em;
+    gap: 0.5em;
+  }
+}
+@media screen and (max-width: 360px) {
+  .custom-btn1 {
+    font-size: 0.65rem;
+  }
 }/*# sourceMappingURL=index.css.map */
