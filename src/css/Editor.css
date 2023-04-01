@@ -51,7 +51,6 @@
   color: #c7c7c7;
 }
 .editor-container .editor-code {
-  padding: 1rem 0 1rem 0;
   overflow: hidden;
   transition: all 1s ease-in-out;
 }
