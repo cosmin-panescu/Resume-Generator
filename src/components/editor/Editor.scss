@@ -5,6 +5,8 @@
     transition: all .75s ease-in-out;
     height: 100vh;
     flex: 1;
+    position: relative;
+    z-index: 50;
 
     &:first-child {
         border-right: 1px solid #2e393e;
@@ -13,7 +15,6 @@
     &:nth-child(2) {
         border-left: 1px solid #2e393e;
         box-shadow: 7px 0px 10px -7px rgba(0, 0, 0, 0.75);
-        z-index: 10;
     }
 
     // collapse button
@@ -62,7 +63,6 @@
     .editor-code {
         padding: 1rem 0 1rem 0;
         overflow: hidden;
-        height: 100%;
         transition: all 1s ease-in-out;
 
         // codemirror classes (taken from the console)

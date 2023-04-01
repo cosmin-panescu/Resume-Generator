@@ -91,31 +91,34 @@ const AppPage = () => {
       </div>
 
       <div className={`panel right-panel ${modalOpen && "overlay"}`}>
-        <div className="resume-buttons">
-          <Link
-            className='custom-btn1 link link-reverse'
-            to='/'
-          >
-            <div className="arrow-wrapper">
-              <div className="arrow"></div>
-            </div>
-            Homepage
-          </Link>
-          <button
-            className="resume-download custom-btn1"
-            onClick={handlePrint}
-          >
-            Download
-            <div className="arrow-wrapper">
-              <div className="arrow"></div>
-            </div>
-          </button>
-        </div>
-        <div className="resume-content" ref={resumeRef}>
-          <div
-            className="resume"
-            dangerouslySetInnerHTML={{ __html: srcDoc }}
-          />
+        <div className="right-panel-container">
+
+          <div className="resume-buttons">
+            <Link
+              className='custom-btn1 link link-reverse'
+              to='/'
+            >
+              <div className="arrow-wrapper">
+                <div className="arrow"></div>
+              </div>
+              Homepage
+            </Link>
+            <button
+              className="resume-download custom-btn1"
+              onClick={handlePrint}
+            >
+              Download
+              <div className="arrow-wrapper">
+                <div className="arrow"></div>
+              </div>
+            </button>
+          </div>
+          <div className="resume-content" ref={resumeRef}>
+            <div
+              className="resume"
+              dangerouslySetInnerHTML={{ __html: srcDoc }}
+            />
+          </div>
         </div>
       </div>
     </div>
