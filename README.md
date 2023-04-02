@@ -5,6 +5,7 @@ Betteresume is a web application that allows you to quickly and easily create cu
 Features:
 - quick and easy generation of customized resume using HTML and CSS template
 - real-time presentation of changes made in the HTML and CSS code
+- automatic saving of each modified version of the template
 - intuitive and easy-to-use use interface
 - HTML and CSS code is easily customizable and adaptable to meet your specific needs
 
@@ -16,7 +17,6 @@ How to use:
 
 Features that will be added:
 - choice of multiple templates
-- automativ saving of each modified version of the template
 - section with answers to the most asked questions about resumes
 - section with tips for resume
 
@@ -28,6 +28,7 @@ Languages and Frameworks used:
 
 Technologies and Tools used:
 - Server-side Rendering
+- Codemirror
 - React Router DOM
 - GIT
 
