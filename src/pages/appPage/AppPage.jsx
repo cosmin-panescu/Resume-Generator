@@ -1,5 +1,5 @@
 // React
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 // components
 import Editor from '../../components/editor/Editor'
 // Local Storage
@@ -92,7 +92,6 @@ const AppPage = () => {
 
       <div className={`panel right-panel ${modalOpen && "overlay"}`}>
         <div className="right-panel-container">
-
           <div className="resume-buttons">
             <Link
               className='custom-btn1 link link-reverse'

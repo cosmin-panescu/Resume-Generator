@@ -31,7 +31,7 @@ export default function Editor(props) {
           className='editor-title-btn'
           onClick={() => setOpen(!open)}
         >
-          <CgArrowsExpandRight className='editor-title-btn-icon'/>
+          <CgArrowsExpandRight className='editor-title-btn-icon' />
         </button>
       </div>
       <ControlledEditor

@@ -15,6 +15,7 @@ const Header = () => {
             <div className="square s3"></div>
             <div className="square s4"></div>
             <div className="square s5"></div>
+            {/* title */}
             <div className="title-container">
                 <h1 className='title'>betteresume.</h1>
             </div>
@@ -24,6 +25,7 @@ const Header = () => {
                 <div className="paper"></div>
                 <div className="keyboard"></div>
             </div>
+            {/* subtitle */}
             <p className='description'>Start now and create your perfect ✨resume✨ to achieve your career goals!</p>
             {/* custom button */}
             <Link
